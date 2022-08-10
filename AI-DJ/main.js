@@ -33,35 +33,14 @@ function draw() {
 
     circle(rightWristX, rightWristY, 20);
 
-    if (rightWristY > 0.2 && rightWristY <= 100) {
-        document.getElementById("speed").innerHTML = "Speed = 0.5x";
-        song.rate(0.5);
-    } else if (rightWristY > 100 && rightWristY <= 200) {
-        document.getElementById("speed").innerHTML = "Speed = 1x";
-        song.rate(1);
-    } else if (rightWristY > 200 && rightWristX <= 300) {
-        document.getElementById("speed").innerHTML = "Speed = 1.5x";
-        song.rate(1.5);
-    } else if (rightWristY > 300 && rightWristY <= 400) {
-        document.getElementById("speed").innerHTML = "Speed = 2x";
-        song.rate(2);
-    } else if (rightWristY > 400 && rightWristY <= 500) {
-        document.getElementById("speed").innerHTML = "Speed = 2x";
-        song.rate(2);
+    if (rightWristY > 0.2) {
+song1.play();
     }
 
-    if (scoreLeftWrist > 0.2) {
-        circle(leftWristX, leftWristy, 20);
-        InNumberleftWristY = Number(leftWristY);
-        remove_decimals = floor(InNumberleftWristY);
-        volume = remove_decimals / 500;
-        document.getElementById("volume").innerHTML = "Volume = " + volume;
-        song.setVolume(volume);
-    }
-}
+    if (leftWristY > 0.2) {
+        song2.play();
 
-function play() {
-    song.play();
+    }
 }
 
 function gotPoses(results) {
