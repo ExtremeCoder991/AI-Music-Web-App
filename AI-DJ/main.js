@@ -5,13 +5,10 @@ rightWristX = 0;
 rightWristY = 0;
 
 function preload() {
-    song = loadSound("music.mp3")
+        song1 = loadSound("Lenka - Blue Skies (REVOKE Remix).mp3")
     song.setVolume(1);
     song.rate(1);
-        song = loadSound("music.mp3")
-    song.setVolume(1);
-    song.rate(1);
-        song = loadSound("music.mp3")
+        song2 = loadSound("Rhapsody-Emerald Sword.mp3")
     song.setVolume(1);
     song.rate(1);
 }
