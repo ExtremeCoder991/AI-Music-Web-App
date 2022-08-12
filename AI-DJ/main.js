@@ -8,6 +8,12 @@ function preload() {
     song = loadSound("music.mp3")
     song.setVolume(1);
     song.rate(1);
+        song = loadSound("music.mp3")
+    song.setVolume(1);
+    song.rate(1);
+        song = loadSound("music.mp3")
+    song.setVolume(1);
+    song.rate(1);
 }
 
 function setup() {
